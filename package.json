@@ -2,16 +2,17 @@
   "name": "pokedex-typescript-lite",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.ts",
+  "main": "index.js",
   "scripts": {
-    "dev": "tsx src/main.ts",
-    "start": "tsx src/main.ts",
-    "build": "tsc"
+    "dev": "npx tsc src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@types/node": "^25.9.2",
     "tsx": "^4.22.4",

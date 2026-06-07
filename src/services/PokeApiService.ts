@@ -1,7 +1,7 @@
 import { PokemonApiResponse, PokemonResumo } from '../models/types.js';
 
 export async function buscarPokemon(nomeOuId: string): Promise<PokemonResumo | null> {
-  const url = `https://pokeapi.co{nomeOuId.toLowerCase().trim()}`;
+  const url = `https://pokeapi.co/api/v2/pokemon/${nomeOuId.toLowerCase().trim()}`;
 
   //Bloco try/catch para capturar falhas de rede ou Pokémon inexistente
   try {

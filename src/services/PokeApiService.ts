@@ -8,7 +8,7 @@ export async function buscarPokemon(nomeOuId: string): Promise<PokemonResumo | n
     const resposta = await fetch(url);
 
     if (!resposta.ok) {
-      console.log(`[ERRO] Pokémon não encontrado: ${nomeOuId}`);
+      console.log(`\n[ERRO] Pokémon não encontrado: ${nomeOuId}`);
       return null;
     }
 
